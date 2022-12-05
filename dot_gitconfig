@@ -1,0 +1,12 @@
+[user]
+	email = 327511+chiga@users.noreply.github.com
+	name = Marcelo Chiga
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[http]
+	sslVerify = false
+[credential]
+	helper = wincred
