@@ -24,7 +24,13 @@ Set-PSReadlineKeyHandler -Key UpArrow -Function HistorySearchBackward
 Set-PSReadlineKeyHandler -Key DownArrow -Function HistorySearchForward
 
 
+# ALIAS
 #Set-Alias lvim 'C:\Users\chiga\.local\bin\lvim.ps1'
+Function CHEZCD {Set-Location -Path C:\Users\chiga\.local\share\chezmoi}
+Set-Alias -Name chezmoicd -Value CHEZCD
+
+Function HOM {Set-Location -Path C:\Users\chiga}
+Set-Alias -Name home -Value HOM
 
 
 Clear-Host
